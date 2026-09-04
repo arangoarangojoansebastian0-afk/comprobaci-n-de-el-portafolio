@@ -88,3 +88,32 @@ footer {
     color: #777;
     font-size: 0.9rem;
 }
+.task-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+.task-list li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.task-list label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.task-list input[type="checkbox"] {
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Efecto cuando la tarea está completada (tachada) */
+li.completed label {
+    color: #888;
+    text-decoration: line-through;
+}
